@@ -1,0 +1,1598 @@
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '1'
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Binary operation operator *
+      |   |       |- first Simple column identifier
+      |   |       | `- column Identifier quotation none identifier 'lo_extendedprice'
+      |   |       `- second Simple column identifier
+      |   |         `- column Identifier quotation none identifier 'lo_discount'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '2'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_orderdate'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'd_datekey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'd_year'
+      |   | `- second Floating point literal
+      |   |   `- literal '1993.000000'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator >
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_discount'
+      |     | `- second Floating point literal
+      |     |   `- literal '1.000000'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator <
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'lo_discount'
+      |       | `- second Floating point literal
+      |       |   `- literal '3.000000'
+      |       `- second Binary operation operator <
+      |         |- first Simple column identifier
+      |         | `- column Identifier quotation none identifier 'lo_quantity'
+      |         `- second Floating point literal
+      |           `- literal '25.000000'
+      `- grouping undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '1'
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Binary operation operator *
+      |   |       |- first Simple column identifier
+      |   |       | `- column Identifier quotation none identifier 'lo_extendedprice'
+      |   |       `- second Simple column identifier
+      |   |         `- column Identifier quotation none identifier 'lo_discount'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '2'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_orderdate'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'd_datekey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'd_yearmonthnum'
+      |   | `- second Floating point literal
+      |   |   `- literal '199401.000000'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator >
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_discount'
+      |     | `- second Floating point literal
+      |     |   `- literal '4.000000'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator <
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'lo_discount'
+      |       | `- second Floating point literal
+      |       |   `- literal '6.000000'
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator >
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 'lo_quantity'
+      |         | `- second Floating point literal
+      |         |   `- literal '26.000000'
+      |         `- second Binary operation operator <
+      |           |- first Simple column identifier
+      |           | `- column Identifier quotation none identifier 'lo_quantity'
+      |           `- second Floating point literal
+      |             `- literal '35.000000'
+      `- grouping undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '1'
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Binary operation operator *
+      |   |       |- first Simple column identifier
+      |   |       | `- column Identifier quotation none identifier 'lo_extendedprice'
+      |   |       `- second Simple column identifier
+      |   |         `- column Identifier quotation none identifier 'lo_discount'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '2'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_orderdate'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'd_datekey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'd_weeknuminyear'
+      |   | `- second Floating point literal
+      |   |   `- literal '6.000000'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'd_year'
+      |     | `- second Floating point literal
+      |     |   `- literal '1994.000000'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator >
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'lo_discount'
+      |       | `- second Floating point literal
+      |       |   `- literal '5.000000'
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator <
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 'lo_discount'
+      |         | `- second Floating point literal
+      |         |   `- literal '7.000000'
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator >
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 'lo_quantity'
+      |           | `- second Floating point literal
+      |           |   `- literal '26.000000'
+      |           `- second Binary operation operator <
+      |             |- first Simple column identifier
+      |             | `- column Identifier quotation none identifier 'lo_quantity'
+      |             `- second Floating point literal
+      |               `- literal '35.000000'
+      `- grouping undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '3'
+      | |- item Result column expression
+      | | |- expression Function call
+      | | | |- name Identifier quotation none identifier 'sum'
+      | | | `- parameters Function params expr list distinct 'false'
+      | | |   `- parameters Expression list size '1'
+      | | |     `- item Simple column identifier
+      | | |       `- column Identifier quotation none identifier 'lo_revenue'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Simple column identifier
+      |   | `- column Identifier quotation none identifier 'p_brand1'
+      |   `- alias undefined
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'date'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'part'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'supplier'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_orderdate'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'd_datekey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_partkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 'p_partkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 's_suppkey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'p_category'
+      |       | `- second String literal
+      |       |   |- quotation single
+      |       |   `- literal MFGR#12
+      |       `- second Binary operation operator =
+      |         |- first Simple column identifier
+      |         | `- column Identifier quotation none identifier 's_region'
+      |         `- second String literal
+      |           |- quotation single
+      |           `- literal AMERICA
+      `- grouping Group by clause
+        |- by Expression list size '2'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'd_year'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'p_brand1'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '3'
+      | |- item Result column expression
+      | | |- expression Function call
+      | | | |- name Identifier quotation none identifier 'sum'
+      | | | `- parameters Function params expr list distinct 'false'
+      | | |   `- parameters Expression list size '1'
+      | | |     `- item Simple column identifier
+      | | |       `- column Identifier quotation none identifier 'lo_revenue'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Simple column identifier
+      |   | `- column Identifier quotation none identifier 'p_brand1'
+      |   `- alias undefined
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'date'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'part'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'supplier'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_orderdate'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'd_datekey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_partkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 'p_partkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 's_suppkey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator >
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'p_brand1'
+      |       | `- second String literal
+      |       |   |- quotation single
+      |       |   `- literal MFGR#2221
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator <
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 'p_brand1'
+      |         | `- second String literal
+      |         |   |- quotation single
+      |         |   `- literal MFGR#2228
+      |         `- second Binary operation operator =
+      |           |- first Simple column identifier
+      |           | `- column Identifier quotation none identifier 's_region'
+      |           `- second String literal
+      |             |- quotation single
+      |             `- literal ASIA
+      `- grouping Group by clause
+        |- by Expression list size '2'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'd_year'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'p_brand1'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '3'
+      | |- item Result column expression
+      | | |- expression Function call
+      | | | |- name Identifier quotation none identifier 'sum'
+      | | | `- parameters Function params expr list distinct 'false'
+      | | |   `- parameters Expression list size '1'
+      | | |     `- item Simple column identifier
+      | | |       `- column Identifier quotation none identifier 'lo_revenue'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Simple column identifier
+      |   | `- column Identifier quotation none identifier 'p_brand1'
+      |   `- alias undefined
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'date'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'part'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'supplier'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_orderdate'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'd_datekey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_partkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 'p_partkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 's_suppkey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'p_brand1'
+      |       | `- second String literal
+      |       |   |- quotation single
+      |       |   `- literal MFGR#2221
+      |       `- second Binary operation operator =
+      |         |- first Simple column identifier
+      |         | `- column Identifier quotation none identifier 's_region'
+      |         `- second String literal
+      |           |- quotation single
+      |           `- literal EUROPE
+      `- grouping Group by clause
+        |- by Expression list size '2'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'd_year'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'p_brand1'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '4'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'c_nation'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 's_nation'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Simple column identifier
+      |   |       `- column Identifier quotation none identifier 'lo_revenue'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'd_datekey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'c_region'
+      |       | `- second String literal
+      |       |   |- quotation single
+      |       |   `- literal ASIA
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator =
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 's_region'
+      |         | `- second String literal
+      |         |   |- quotation single
+      |         |   `- literal ASIA
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator >=
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 'd_year'
+      |           | `- second Floating point literal
+      |           |   `- literal '1992.000000'
+      |           `- second Binary operation operator <=
+      |             |- first Simple column identifier
+      |             | `- column Identifier quotation none identifier 'd_year'
+      |             `- second Floating point literal
+      |               `- literal '1997.000000'
+      `- grouping Group by clause
+        |- by Expression list size '3'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'c_nation'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 's_nation'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'd_year'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '4'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'c_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 's_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Simple column identifier
+      |   |       `- column Identifier quotation none identifier 'lo_revenue'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'd_datekey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'c_nation'
+      |       | `- second String literal
+      |       |   |- quotation single
+      |       |   `- literal UNITEDSTATES
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator =
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 's_nation'
+      |         | `- second String literal
+      |         |   |- quotation single
+      |         |   `- literal UNITEDSTATES
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator >=
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 'd_year'
+      |           | `- second Floating point literal
+      |           |   `- literal '1992.000000'
+      |           `- second Binary operation operator <=
+      |             |- first Simple column identifier
+      |             | `- column Identifier quotation none identifier 'd_year'
+      |             `- second Floating point literal
+      |               `- literal '1997.000000'
+      `- grouping Group by clause
+        |- by Expression list size '3'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'c_city'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 's_city'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'd_year'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '4'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'c_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 's_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Simple column identifier
+      |   |       `- column Identifier quotation none identifier 'lo_revenue'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'd_datekey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator OR
+      |       | |- first Binary operation operator =
+      |       | | |- first Simple column identifier
+      |       | | | `- column Identifier quotation none identifier 'c_city'
+      |       | | `- second String literal
+      |       | |   |- quotation single
+      |       | |   `- literal UNITEDKI1
+      |       | `- second Binary operation operator =
+      |       |   |- first Simple column identifier
+      |       |   | `- column Identifier quotation none identifier 'c_city'
+      |       |   `- second String literal
+      |       |     |- quotation single
+      |       |     `- literal UNITEDKI5
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator OR
+      |         | |- first Binary operation operator =
+      |         | | |- first Simple column identifier
+      |         | | | `- column Identifier quotation none identifier 's_city'
+      |         | | `- second String literal
+      |         | |   |- quotation single
+      |         | |   `- literal UNITEDKI1
+      |         | `- second Binary operation operator =
+      |         |   |- first Simple column identifier
+      |         |   | `- column Identifier quotation none identifier 's_city'
+      |         |   `- second String literal
+      |         |     |- quotation single
+      |         |     `- literal UNITEDKI5
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator >=
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 'd_year'
+      |           | `- second Floating point literal
+      |           |   `- literal '1992.000000'
+      |           `- second Binary operation operator <=
+      |             |- first Simple column identifier
+      |             | `- column Identifier quotation none identifier 'd_year'
+      |             `- second Floating point literal
+      |               `- literal '1997.000000'
+      `- grouping Group by clause
+        |- by Expression list size '3'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'c_city'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 's_city'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'd_year'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '4'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'c_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 's_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Simple column identifier
+      |   |       `- column Identifier quotation none identifier 'lo_revenue'
+      |   `- alias Identifier quotation none identifier 'revenue'
+      |- from Table or subquery list size '4'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'lineorder'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'date'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'd_datekey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator OR
+      |       | |- first Binary operation operator =
+      |       | | |- first Simple column identifier
+      |       | | | `- column Identifier quotation none identifier 'c_city'
+      |       | | `- second String literal
+      |       | |   |- quotation single
+      |       | |   `- literal UNITEDKI1
+      |       | `- second Binary operation operator =
+      |       |   |- first Simple column identifier
+      |       |   | `- column Identifier quotation none identifier 'c_city'
+      |       |   `- second String literal
+      |       |     |- quotation single
+      |       |     `- literal UNITEDKI5
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator OR
+      |         | |- first Binary operation operator =
+      |         | | |- first Simple column identifier
+      |         | | | `- column Identifier quotation none identifier 's_city'
+      |         | | `- second String literal
+      |         | |   |- quotation single
+      |         | |   `- literal UNITEDKI1
+      |         | `- second Binary operation operator =
+      |         |   |- first Simple column identifier
+      |         |   | `- column Identifier quotation none identifier 's_city'
+      |         |   `- second String literal
+      |         |     |- quotation single
+      |         |     `- literal UNITEDKI5
+      |         `- second Binary operation operator =
+      |           |- first Simple column identifier
+      |           | `- column Identifier quotation none identifier 'd_yearmonth'
+      |           `- second String literal
+      |             |- quotation single
+      |             `- literal Dec1997
+      `- grouping Group by clause
+        |- by Expression list size '3'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'c_city'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 's_city'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'd_year'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '3'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'c_nation'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Binary operation operator -
+      |   |       |- first Simple column identifier
+      |   |       | `- column Identifier quotation none identifier 'lo_revenue'
+      |   |       `- second Simple column identifier
+      |   |         `- column Identifier quotation none identifier 'lo_supplycost'
+      |   `- alias Identifier quotation none identifier 'profit'
+      |- from Table or subquery list size '5'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'date'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'part'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'lineorder'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_partkey'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'p_partkey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |       | `- second Simple column identifier
+      |       |   `- column Identifier quotation none identifier 'd_datekey'
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator =
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 'c_region'
+      |         | `- second String literal
+      |         |   |- quotation single
+      |         |   `- literal AMERICA
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator =
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 's_region'
+      |           | `- second String literal
+      |           |   |- quotation single
+      |           |   `- literal AMERICA
+      |           `- second Binary operation operator OR
+      |             |- first Binary operation operator =
+      |             | |- first Simple column identifier
+      |             | | `- column Identifier quotation none identifier 'p_mfgr'
+      |             | `- second String literal
+      |             |   |- quotation single
+      |             |   `- literal MFGR#1
+      |             `- second Binary operation operator =
+      |               |- first Simple column identifier
+      |               | `- column Identifier quotation none identifier 'p_mfgr'
+      |               `- second String literal
+      |                 |- quotation single
+      |                 `- literal MFGR#2
+      `- grouping Group by clause
+        |- by Expression list size '2'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'd_year'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'c_nation'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '4'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 's_nation'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'p_category'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Binary operation operator -
+      |   |       |- first Simple column identifier
+      |   |       | `- column Identifier quotation none identifier 'lo_revenue'
+      |   |       `- second Simple column identifier
+      |   |         `- column Identifier quotation none identifier 'lo_supplycost'
+      |   `- alias Identifier quotation none identifier 'profit'
+      |- from Table or subquery list size '5'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'date'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'part'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'lineorder'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_partkey'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'p_partkey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |       | `- second Simple column identifier
+      |       |   `- column Identifier quotation none identifier 'd_datekey'
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator =
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 'c_region'
+      |         | `- second String literal
+      |         |   |- quotation single
+      |         |   `- literal AMERICA
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator =
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 's_region'
+      |           | `- second String literal
+      |           |   |- quotation single
+      |           |   `- literal AMERICA
+      |           `- second Binary operation operator AND
+      |             |- first Binary operation operator OR
+      |             | |- first Binary operation operator =
+      |             | | |- first Simple column identifier
+      |             | | | `- column Identifier quotation none identifier 'd_year'
+      |             | | `- second Floating point literal
+      |             | |   `- literal '1997.000000'
+      |             | `- second Binary operation operator =
+      |             |   |- first Simple column identifier
+      |             |   | `- column Identifier quotation none identifier 'd_year'
+      |             |   `- second Floating point literal
+      |             |     `- literal '1998.000000'
+      |             `- second Binary operation operator AND
+      |               |- first Binary operation operator =
+      |               | |- first Simple column identifier
+      |               | | `- column Identifier quotation none identifier 'p_mfgr'
+      |               | `- second String literal
+      |               |   |- quotation single
+      |               |   `- literal MFGR#1
+      |               `- second Binary operation operator =
+      |                 |- first Simple column identifier
+      |                 | `- column Identifier quotation none identifier 'p_mfgr'
+      |                 `- second String literal
+      |                   |- quotation single
+      |                   `- literal MFGR#2
+      `- grouping Group by clause
+        |- by Expression list size '3'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'd_year'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 's_nation'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'p_category'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Select statement
+    `- core Select core select
+      |- type not specified
+      |- columns Result column list size '4'
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'd_year'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 's_city'
+      | | `- alias undefined
+      | |- item Result column expression
+      | | |- expression Simple column identifier
+      | | | `- column Identifier quotation none identifier 'p_brand1'
+      | | `- alias undefined
+      | `- item Result column expression
+      |   |- expression Function call
+      |   | |- name Identifier quotation none identifier 'sum'
+      |   | `- parameters Function params expr list distinct 'false'
+      |   |   `- parameters Expression list size '1'
+      |   |     `- item Binary operation operator -
+      |   |       |- first Simple column identifier
+      |   |       | `- column Identifier quotation none identifier 'lo_revenue'
+      |   |       `- second Simple column identifier
+      |   |         `- column Identifier quotation none identifier 'lo_supplycost'
+      |   `- alias Identifier quotation none identifier 'profit'
+      |- from Table or subquery list size '5'
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'date'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'customer'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'supplier'
+      | | | `- alias undefined
+      | | `- index not specified
+      | |- item Table or subquery table
+      | | |- table Aliased table identifier
+      | | | |- table Simple table identifier
+      | | | | `- table Identifier quotation none identifier 'part'
+      | | | `- alias undefined
+      | | `- index not specified
+      | `- item Table or subquery table
+      |   |- table Aliased table identifier
+      |   | |- table Simple table identifier
+      |   | | `- table Identifier quotation none identifier 'lineorder'
+      |   | `- alias undefined
+      |   `- index not specified
+      |- where Binary operation operator AND
+      | |- first Binary operation operator =
+      | | |- first Simple column identifier
+      | | | `- column Identifier quotation none identifier 'lo_custkey'
+      | | `- second Simple column identifier
+      | |   `- column Identifier quotation none identifier 'c_custkey'
+      | `- second Binary operation operator AND
+      |   |- first Binary operation operator =
+      |   | |- first Simple column identifier
+      |   | | `- column Identifier quotation none identifier 'lo_suppkey'
+      |   | `- second Simple column identifier
+      |   |   `- column Identifier quotation none identifier 's_suppkey'
+      |   `- second Binary operation operator AND
+      |     |- first Binary operation operator =
+      |     | |- first Simple column identifier
+      |     | | `- column Identifier quotation none identifier 'lo_partkey'
+      |     | `- second Simple column identifier
+      |     |   `- column Identifier quotation none identifier 'p_partkey'
+      |     `- second Binary operation operator AND
+      |       |- first Binary operation operator =
+      |       | |- first Simple column identifier
+      |       | | `- column Identifier quotation none identifier 'lo_orderdate'
+      |       | `- second Simple column identifier
+      |       |   `- column Identifier quotation none identifier 'd_datekey'
+      |       `- second Binary operation operator AND
+      |         |- first Binary operation operator =
+      |         | |- first Simple column identifier
+      |         | | `- column Identifier quotation none identifier 'c_region'
+      |         | `- second String literal
+      |         |   |- quotation single
+      |         |   `- literal AMERICA
+      |         `- second Binary operation operator AND
+      |           |- first Binary operation operator =
+      |           | |- first Simple column identifier
+      |           | | `- column Identifier quotation none identifier 's_nation'
+      |           | `- second String literal
+      |           |   |- quotation single
+      |           |   `- literal UNITEDSTATES
+      |           `- second Binary operation operator AND
+      |             |- first Binary operation operator OR
+      |             | |- first Binary operation operator =
+      |             | | |- first Simple column identifier
+      |             | | | `- column Identifier quotation none identifier 'd_year'
+      |             | | `- second Floating point literal
+      |             | |   `- literal '1997.000000'
+      |             | `- second Binary operation operator =
+      |             |   |- first Simple column identifier
+      |             |   | `- column Identifier quotation none identifier 'd_year'
+      |             |   `- second Floating point literal
+      |             |     `- literal '1998.000000'
+      |             `- second Binary operation operator =
+      |               |- first Simple column identifier
+      |               | `- column Identifier quotation none identifier 'p_category'
+      |               `- second String literal
+      |                 |- quotation single
+      |                 `- literal MFGR#14
+      `- grouping Group by clause
+        |- by Expression list size '3'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 'd_year'
+        | |- item Simple column identifier
+        | | `- column Identifier quotation none identifier 's_city'
+        | `- item Simple column identifier
+        |   `- column Identifier quotation none identifier 'p_brand1'
+        `- having undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Create table stmt temporary 'false' if not exists 'false'
+    |- identifier Simple table identifier
+    | `- table Identifier quotation none identifier 'LINEORDER'
+    `- definition Create table stmt columns rowid 'true'
+      `- columns Column definition list size '17'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_ORDERKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_LINENUMBER'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '7.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_CUSTKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_PARTKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_SUPPKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_ORDERDATE'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_ORDERPRIORITY'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '15.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_SHIPPRIORITY'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '1.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_QUANTITY'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '50.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_EXTENDEDPRICE'
+        | `- type Type name type 'FLOAT' upper_bound Floating point literal
+        |   `- literal '450.000000' lower_bound Floating point literal
+        |   `- literal '55.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_ORDTOTALPRICE'
+        | `- type Type name type 'FLOAT' upper_bound Floating point literal
+        |   `- literal '0.000000' lower_bound Floating point literal
+        |   `- literal '388.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_DISCOUNT'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '10.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_REVENUE'
+        | `- type Type name type 'FLOAT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_SUPPLYCOST'
+        | `- type Type name type 'FLOAT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_TAX'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '8.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'LO_COMMITDATE'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        `- item Column definition
+          |- identifier Identifier quotation none identifier 'LO_SHIPMODE'
+          `- type Type name type 'TEXT' upper_bound Floating point literal
+            `- literal '10.000000' lower_bound undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Create table stmt temporary 'false' if not exists 'false'
+    |- identifier Simple table identifier
+    | `- table Identifier quotation none identifier 'PART'
+    `- definition Create table stmt columns rowid 'true'
+      `- columns Column definition list size '9'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_PARTKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_NAME'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '22.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_MFGR'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '6.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_CATEGORY'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '7.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_BRAND1'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '9.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_COLOR'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '11.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_TYPE'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '25.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'P_SIZE'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '50.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        `- item Column definition
+          |- identifier Identifier quotation none identifier 'P_CONTAINER'
+          `- type Type name type 'TEXT' upper_bound Floating point literal
+            `- literal '10.000000' lower_bound undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Create table stmt temporary 'false' if not exists 'false'
+    |- identifier Simple table identifier
+    | `- table Identifier quotation none identifier 'SUPPLIER'
+    `- definition Create table stmt columns rowid 'true'
+      `- columns Column definition list size '7'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'S_SUPPKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'S_NAME'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '25.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'S_ADDRESS'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '25.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'S_CITY'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '10.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'S_NATION'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '15.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'S_REGION'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '12.000000' lower_bound undefined
+        `- item Column definition
+          |- identifier Identifier quotation none identifier 'S_PHONE'
+          `- type Type name type 'TEXT' upper_bound Floating point literal
+            `- literal '15.000000' lower_bound undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Create table stmt temporary 'false' if not exists 'false'
+    |- identifier Simple table identifier
+    | `- table Identifier quotation none identifier 'CUSTOMER'
+    `- definition Create table stmt columns rowid 'true'
+      `- columns Column definition list size '5'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'C_CUSTKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'C_NAME'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '25.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'C_ADDRESS'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '25.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'C_CITY'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '10.000000' lower_bound undefined
+        `- item Column definition
+          |- identifier Identifier quotation none identifier 'C_NATION'
+          `- type Type name type 'TEXT' upper_bound Floating point literal
+            `- literal '15.000000' lower_bound undefined
+
+SQL size '1'
+`- item SQL statement
+  |- explain Explain clause
+  | |- explain 'false'
+  | `- query plan 'false'
+  `- stmt Create table stmt temporary 'false' if not exists 'false'
+    |- identifier Simple table identifier
+    | `- table Identifier quotation none identifier 'DATE'
+    `- definition Create table stmt columns rowid 'true'
+      `- columns Column definition list size '17'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_DATEKEY'
+        | `- type Type name type 'INT' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_DATE'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '18.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_DAYOFWEEK'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '8.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_MONTH'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '9.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_YEAR'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '1998.000000' lower_bound Floating point literal
+        |   `- literal '1992.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_YEARMONTHNUM'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '300012.000000' lower_bound Floating point literal
+        |   `- literal '111111.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_YEARMONTH'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '7.000000' lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_DAYNUMINWEEK'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '7.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_DAYNUMINMONTH'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '31.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_DAYNUMINYEAR'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '366.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_MONTHNUMINYEAR'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '12.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_WEEKNUMINYEAR'
+        | `- type Type name type 'INT' upper_bound Floating point literal
+        |   `- literal '53.000000' lower_bound Floating point literal
+        |   `- literal '1.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_SELLINGSEASON'
+        | `- type Type name type 'TEXT' upper_bound Floating point literal
+        |   `- literal '12.000000' lower_bound Floating point literal
+        |   `- literal '0.000000'
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_LASTDAYINWEEKFL'
+        | `- type Type name type 'BOOLEAN' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_LASTDAYINMONTHFL'
+        | `- type Type name type 'BOOLEAN' upper_bound undefined lower_bound undefined
+        |- item Column definition
+        | |- identifier Identifier quotation none identifier 'D_HOLIDAYFL'
+        | `- type Type name type 'BOOLEAN' upper_bound undefined lower_bound undefined
+        `- item Column definition
+          |- identifier Identifier quotation none identifier 'D_WEEKDAYFL'
+          `- type Type name type 'BOOLEAN' upper_bound undefined lower_bound undefined
+

@@ -1,0 +1,1598 @@
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'1'[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mBinary operation[0m operator [33m*[0m[34m
+      |   |       |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   |       | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_extendedprice'[0m[34m
+      |   |       `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |         `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'2'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |   | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |   |   `- [0mliteral [32m'1993.000000'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m>[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |     | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |     |   `- [0mliteral [32m'1.000000'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |       | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |       |   `- [0mliteral [32m'3.000000'[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |         |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_quantity'[0m[34m
+      |         `- [0msecond [1m[35mFloating point literal[0m[34m
+      |           `- [0mliteral [32m'25.000000'[0m[34m
+      `- [0mgrouping [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'1'[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mBinary operation[0m operator [33m*[0m[34m
+      |   |       |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   |       | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_extendedprice'[0m[34m
+      |   |       `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |         `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'2'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_yearmonthnum'[0m[34m
+      |   | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |   |   `- [0mliteral [32m'199401.000000'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m>[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |     | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |     |   `- [0mliteral [32m'4.000000'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |       | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |       |   `- [0mliteral [32m'6.000000'[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m>[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_quantity'[0m[34m
+      |         | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |         |   `- [0mliteral [32m'26.000000'[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |           |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_quantity'[0m[34m
+      |           `- [0msecond [1m[35mFloating point literal[0m[34m
+      |             `- [0mliteral [32m'35.000000'[0m[34m
+      `- [0mgrouping [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'1'[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mBinary operation[0m operator [33m*[0m[34m
+      |   |       |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   |       | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_extendedprice'[0m[34m
+      |   |       `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |         `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'2'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_weeknuminyear'[0m[34m
+      |   | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |   |   `- [0mliteral [32m'6.000000'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |     | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |     |   `- [0mliteral [32m'1994.000000'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m>[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |       | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |       |   `- [0mliteral [32m'5.000000'[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_discount'[0m[34m
+      |         | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |         |   `- [0mliteral [32m'7.000000'[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m>[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_quantity'[0m[34m
+      |           | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |           |   `- [0mliteral [32m'26.000000'[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |             |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_quantity'[0m[34m
+      |             `- [0msecond [1m[35mFloating point literal[0m[34m
+      |               `- [0mliteral [32m'35.000000'[0m[34m
+      `- [0mgrouping [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'3'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mFunction call[0m[34m
+      | | | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      | | | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      | | |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      | | |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      | | |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      |   `- [0malias [35mundefined[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'part'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_partkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_partkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_category'[0m[34m
+      |       | `- [0msecond [1m[35mString literal[0m[34m
+      |       |   |- [0mquotation [33msingle[0m[34m
+      |       |   `- [0mliteral [32mMFGR#12[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_region'[0m[34m
+      |         `- [0msecond [1m[35mString literal[0m[34m
+      |           |- [0mquotation [33msingle[0m[34m
+      |           `- [0mliteral [32mAMERICA[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'2'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'3'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mFunction call[0m[34m
+      | | | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      | | | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      | | |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      | | |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      | | |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      |   `- [0malias [35mundefined[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'part'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_partkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_partkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m>[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      |       | `- [0msecond [1m[35mString literal[0m[34m
+      |       |   |- [0mquotation [33msingle[0m[34m
+      |       |   `- [0mliteral [32mMFGR#2221[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m<[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      |         | `- [0msecond [1m[35mString literal[0m[34m
+      |         |   |- [0mquotation [33msingle[0m[34m
+      |         |   `- [0mliteral [32mMFGR#2228[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |           |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_region'[0m[34m
+      |           `- [0msecond [1m[35mString literal[0m[34m
+      |             |- [0mquotation [33msingle[0m[34m
+      |             `- [0mliteral [32mASIA[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'2'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'3'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mFunction call[0m[34m
+      | | | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      | | | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      | | |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      | | |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      | | |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      |   `- [0malias [35mundefined[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'part'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_partkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_partkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      |       | `- [0msecond [1m[35mString literal[0m[34m
+      |       |   |- [0mquotation [33msingle[0m[34m
+      |       |   `- [0mliteral [32mMFGR#2221[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_region'[0m[34m
+      |         `- [0msecond [1m[35mString literal[0m[34m
+      |           |- [0mquotation [33msingle[0m[34m
+      |           `- [0mliteral [32mEUROPE[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'2'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_nation'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_nation'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      |   |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_region'[0m[34m
+      |       | `- [0msecond [1m[35mString literal[0m[34m
+      |       |   |- [0mquotation [33msingle[0m[34m
+      |       |   `- [0mliteral [32mASIA[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_region'[0m[34m
+      |         | `- [0msecond [1m[35mString literal[0m[34m
+      |         |   |- [0mquotation [33msingle[0m[34m
+      |         |   `- [0mliteral [32mASIA[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m>=[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |           | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |           |   `- [0mliteral [32m'1992.000000'[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33m<=[0m[34m
+      |             |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             `- [0msecond [1m[35mFloating point literal[0m[34m
+      |               `- [0mliteral [32m'1997.000000'[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'3'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_nation'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_nation'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      |   |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_nation'[0m[34m
+      |       | `- [0msecond [1m[35mString literal[0m[34m
+      |       |   |- [0mquotation [33msingle[0m[34m
+      |       |   `- [0mliteral [32mUNITEDSTATES[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_nation'[0m[34m
+      |         | `- [0msecond [1m[35mString literal[0m[34m
+      |         |   |- [0mquotation [33msingle[0m[34m
+      |         |   `- [0mliteral [32mUNITEDSTATES[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m>=[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |           | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |           |   `- [0mliteral [32m'1992.000000'[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33m<=[0m[34m
+      |             |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             `- [0msecond [1m[35mFloating point literal[0m[34m
+      |               `- [0mliteral [32m'1997.000000'[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'3'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      |   |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |       | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      |       | | `- [0msecond [1m[35mString literal[0m[34m
+      |       | |   |- [0mquotation [33msingle[0m[34m
+      |       | |   `- [0mliteral [32mUNITEDKI1[0m[34m
+      |       | `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       |   |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      |       |   `- [0msecond [1m[35mString literal[0m[34m
+      |       |     |- [0mquotation [33msingle[0m[34m
+      |       |     `- [0mliteral [32mUNITEDKI5[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |         | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      |         | | `- [0msecond [1m[35mString literal[0m[34m
+      |         | |   |- [0mquotation [33msingle[0m[34m
+      |         | |   `- [0mliteral [32mUNITEDKI1[0m[34m
+      |         | `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         |   |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      |         |   `- [0msecond [1m[35mString literal[0m[34m
+      |         |     |- [0mquotation [33msingle[0m[34m
+      |         |     `- [0mliteral [32mUNITEDKI5[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m>=[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |           | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |           |   `- [0mliteral [32m'1992.000000'[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33m<=[0m[34m
+      |             |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             `- [0msecond [1m[35mFloating point literal[0m[34m
+      |               `- [0mliteral [32m'1997.000000'[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'3'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mSimple column identifier[0m[34m
+      |   |       `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'revenue'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |       | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      |       | | `- [0msecond [1m[35mString literal[0m[34m
+      |       | |   |- [0mquotation [33msingle[0m[34m
+      |       | |   `- [0mliteral [32mUNITEDKI1[0m[34m
+      |       | `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       |   |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+      |       |   `- [0msecond [1m[35mString literal[0m[34m
+      |       |     |- [0mquotation [33msingle[0m[34m
+      |       |     `- [0mliteral [32mUNITEDKI5[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |         | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      |         | | `- [0msecond [1m[35mString literal[0m[34m
+      |         | |   |- [0mquotation [33msingle[0m[34m
+      |         | |   `- [0mliteral [32mUNITEDKI1[0m[34m
+      |         | `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         |   |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      |         |   `- [0msecond [1m[35mString literal[0m[34m
+      |         |     |- [0mquotation [33msingle[0m[34m
+      |         |     `- [0mliteral [32mUNITEDKI5[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |           |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_yearmonth'[0m[34m
+      |           `- [0msecond [1m[35mString literal[0m[34m
+      |             |- [0mquotation [33msingle[0m[34m
+      |             `- [0mliteral [32mDec1997[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'3'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_city'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'3'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_nation'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mBinary operation[0m operator [33m-[0m[34m
+      |   |       |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   |       | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   |       `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |         `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_supplycost'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'profit'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'5'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'part'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_partkey'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_partkey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |       | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |       |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_region'[0m[34m
+      |         | `- [0msecond [1m[35mString literal[0m[34m
+      |         |   |- [0mquotation [33msingle[0m[34m
+      |         |   `- [0mliteral [32mAMERICA[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_region'[0m[34m
+      |           | `- [0msecond [1m[35mString literal[0m[34m
+      |           |   |- [0mquotation [33msingle[0m[34m
+      |           |   `- [0mliteral [32mAMERICA[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |             |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |             | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_mfgr'[0m[34m
+      |             | `- [0msecond [1m[35mString literal[0m[34m
+      |             |   |- [0mquotation [33msingle[0m[34m
+      |             |   `- [0mliteral [32mMFGR#1[0m[34m
+      |             `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |               |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |               | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_mfgr'[0m[34m
+      |               `- [0msecond [1m[35mString literal[0m[34m
+      |                 |- [0mquotation [33msingle[0m[34m
+      |                 `- [0mliteral [32mMFGR#2[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'2'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_nation'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_nation'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_category'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mBinary operation[0m operator [33m-[0m[34m
+      |   |       |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   |       | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   |       `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |         `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_supplycost'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'profit'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'5'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'part'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_partkey'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_partkey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |       | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |       |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_region'[0m[34m
+      |         | `- [0msecond [1m[35mString literal[0m[34m
+      |         |   |- [0mquotation [33msingle[0m[34m
+      |         |   `- [0mliteral [32mAMERICA[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_region'[0m[34m
+      |           | `- [0msecond [1m[35mString literal[0m[34m
+      |           |   |- [0mquotation [33msingle[0m[34m
+      |           |   `- [0mliteral [32mAMERICA[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |             |- [0mfirst [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |             | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |             | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             | | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |             | |   `- [0mliteral [32m'1997.000000'[0m[34m
+      |             | `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |             |   |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             |   `- [0msecond [1m[35mFloating point literal[0m[34m
+      |             |     `- [0mliteral [32m'1998.000000'[0m[34m
+      |             `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |               |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |               | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |               | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_mfgr'[0m[34m
+      |               | `- [0msecond [1m[35mString literal[0m[34m
+      |               |   |- [0mquotation [33msingle[0m[34m
+      |               |   `- [0mliteral [32mMFGR#1[0m[34m
+      |               `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |                 |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |                 | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_mfgr'[0m[34m
+      |                 `- [0msecond [1m[35mString literal[0m[34m
+      |                   |- [0mquotation [33msingle[0m[34m
+      |                   `- [0mliteral [32mMFGR#2[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'3'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_nation'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_category'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mSelect statement[0m[34m
+    `- [0mcore [1m[35mSelect core select[0m[34m
+      |- [0mtype [33mnot specified[0m[34m
+      |- [0mcolumns [1m[35mResult column list[0m size [32m'4'[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | |- [0mitem [1m[35mResult column expression[0m[34m
+      | | |- [0mexpression [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+      | | `- [0malias [35mundefined[0m[34m
+      | `- [0mitem [1m[35mResult column expression[0m[34m
+      |   |- [0mexpression [1m[35mFunction call[0m[34m
+      |   | |- [0mname [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'sum'[0m[34m
+      |   | `- [0mparameters [1m[35mFunction params expr list[0m distinct [32m'false'[0m[34m
+      |   |   `- [0mparameters [1m[35mExpression list[0m size [32m'1'[0m[34m
+      |   |     `- [0mitem [1m[35mBinary operation[0m operator [33m-[0m[34m
+      |   |       |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   |       | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_revenue'[0m[34m
+      |   |       `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |         `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_supplycost'[0m[34m
+      |   `- [0malias [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'profit'[0m[34m
+      |- [0mfrom [1m[35mTable or subquery list[0m size [32m'5'[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'date'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'customer'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'supplier'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | |- [0mitem [1m[35mTable or subquery table[0m[34m
+      | | |- [0mtable [1m[35mAliased table identifier[0m[34m
+      | | | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      | | | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'part'[0m[34m
+      | | | `- [0malias [35mundefined[0m[34m
+      | | `- [0mindex [33mnot specified[0m[34m
+      | `- [0mitem [1m[35mTable or subquery table[0m[34m
+      |   |- [0mtable [1m[35mAliased table identifier[0m[34m
+      |   | |- [0mtable [1m[35mSimple table identifier[0m[34m
+      |   | | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lineorder'[0m[34m
+      |   | `- [0malias [35mundefined[0m[34m
+      |   `- [0mindex [33mnot specified[0m[34m
+      |- [0mwhere [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_custkey'[0m[34m
+      | | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      | |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_custkey'[0m[34m
+      | `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |   |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |   | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |   | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_suppkey'[0m[34m
+      |   | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |   |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_suppkey'[0m[34m
+      |   `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |     |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |     | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |     | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_partkey'[0m[34m
+      |     | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |     |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_partkey'[0m[34m
+      |     `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |       |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |       | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |       | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'lo_orderdate'[0m[34m
+      |       | `- [0msecond [1m[35mSimple column identifier[0m[34m
+      |       |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_datekey'[0m[34m
+      |       `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |         |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |         | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |         | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'c_region'[0m[34m
+      |         | `- [0msecond [1m[35mString literal[0m[34m
+      |         |   |- [0mquotation [33msingle[0m[34m
+      |         |   `- [0mliteral [32mAMERICA[0m[34m
+      |         `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |           |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |           | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |           | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_nation'[0m[34m
+      |           | `- [0msecond [1m[35mString literal[0m[34m
+      |           |   |- [0mquotation [33msingle[0m[34m
+      |           |   `- [0mliteral [32mUNITEDSTATES[0m[34m
+      |           `- [0msecond [1m[35mBinary operation[0m operator [33mAND[0m[34m
+      |             |- [0mfirst [1m[35mBinary operation[0m operator [33mOR[0m[34m
+      |             | |- [0mfirst [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |             | | |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             | | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             | | `- [0msecond [1m[35mFloating point literal[0m[34m
+      |             | |   `- [0mliteral [32m'1997.000000'[0m[34m
+      |             | `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |             |   |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |             |   | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+      |             |   `- [0msecond [1m[35mFloating point literal[0m[34m
+      |             |     `- [0mliteral [32m'1998.000000'[0m[34m
+      |             `- [0msecond [1m[35mBinary operation[0m operator [33m=[0m[34m
+      |               |- [0mfirst [1m[35mSimple column identifier[0m[34m
+      |               | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_category'[0m[34m
+      |               `- [0msecond [1m[35mString literal[0m[34m
+      |                 |- [0mquotation [33msingle[0m[34m
+      |                 `- [0mliteral [32mMFGR#14[0m[34m
+      `- [0mgrouping [1m[35mGroup by clause[0m[34m
+        |- [0mby [1m[35mExpression list[0m size [32m'3'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'd_year'[0m[34m
+        | |- [0mitem [1m[35mSimple column identifier[0m[34m
+        | | `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m's_city'[0m[34m
+        | `- [0mitem [1m[35mSimple column identifier[0m[34m
+        |   `- [0mcolumn [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'p_brand1'[0m[34m
+        `- [0mhaving [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mCreate table stmt[0m temporary [32m'false'[0m if not exists [32m'false'[0m[34m
+    |- [0midentifier [1m[35mSimple table identifier[0m[34m
+    | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LINEORDER'[0m[34m
+    `- [0mdefinition [1m[35mCreate table stmt columns[0m rowid [32m'true'[0m[34m
+      `- [0mcolumns [1m[35mColumn definition list[0m size [32m'17'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_ORDERKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_LINENUMBER'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'7.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_CUSTKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_PARTKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_SUPPKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_ORDERDATE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_ORDERPRIORITY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'15.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_SHIPPRIORITY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_QUANTITY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'50.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_EXTENDEDPRICE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'FLOAT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'450.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'55.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_ORDTOTALPRICE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'FLOAT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'388.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_DISCOUNT'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'10.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_REVENUE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'FLOAT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_SUPPLYCOST'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'FLOAT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_TAX'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'8.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_COMMITDATE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        `- [0mitem [1m[35mColumn definition[0m[34m
+          |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'LO_SHIPMODE'[0m[34m
+          `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+            `- [0mliteral [32m'10.000000'[0m lower_bound [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mCreate table stmt[0m temporary [32m'false'[0m if not exists [32m'false'[0m[34m
+    |- [0midentifier [1m[35mSimple table identifier[0m[34m
+    | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'PART'[0m[34m
+    `- [0mdefinition [1m[35mCreate table stmt columns[0m rowid [32m'true'[0m[34m
+      `- [0mcolumns [1m[35mColumn definition list[0m size [32m'9'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_PARTKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_NAME'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'22.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_MFGR'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'6.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_CATEGORY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'7.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_BRAND1'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'9.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_COLOR'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'11.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_TYPE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'25.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_SIZE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'50.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        `- [0mitem [1m[35mColumn definition[0m[34m
+          |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'P_CONTAINER'[0m[34m
+          `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+            `- [0mliteral [32m'10.000000'[0m lower_bound [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mCreate table stmt[0m temporary [32m'false'[0m if not exists [32m'false'[0m[34m
+    |- [0midentifier [1m[35mSimple table identifier[0m[34m
+    | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'SUPPLIER'[0m[34m
+    `- [0mdefinition [1m[35mCreate table stmt columns[0m rowid [32m'true'[0m[34m
+      `- [0mcolumns [1m[35mColumn definition list[0m size [32m'7'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_SUPPKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_NAME'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'25.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_ADDRESS'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'25.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_CITY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'10.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_NATION'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'15.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_REGION'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'12.000000'[0m lower_bound [35mundefined[0m[34m
+        `- [0mitem [1m[35mColumn definition[0m[34m
+          |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'S_PHONE'[0m[34m
+          `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+            `- [0mliteral [32m'15.000000'[0m lower_bound [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mCreate table stmt[0m temporary [32m'false'[0m if not exists [32m'false'[0m[34m
+    |- [0midentifier [1m[35mSimple table identifier[0m[34m
+    | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'CUSTOMER'[0m[34m
+    `- [0mdefinition [1m[35mCreate table stmt columns[0m rowid [32m'true'[0m[34m
+      `- [0mcolumns [1m[35mColumn definition list[0m size [32m'5'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'C_CUSTKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'C_NAME'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'25.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'C_ADDRESS'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'25.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'C_CITY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'10.000000'[0m lower_bound [35mundefined[0m[34m
+        `- [0mitem [1m[35mColumn definition[0m[34m
+          |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'C_NATION'[0m[34m
+          `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+            `- [0mliteral [32m'15.000000'[0m lower_bound [35mundefined[0m
+
+[1m[35mSQL[0m size [32m'1'[0m[34m
+`- [0mitem [1m[35mSQL statement[0m[34m
+  |- [0mexplain [1m[35mExplain clause[0m[34m
+  | |- [0mexplain [32m'false'[0m[34m
+  | `- [0mquery plan [32m'false'[0m[34m
+  `- [0mstmt [1m[35mCreate table stmt[0m temporary [32m'false'[0m if not exists [32m'false'[0m[34m
+    |- [0midentifier [1m[35mSimple table identifier[0m[34m
+    | `- [0mtable [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'DATE'[0m[34m
+    `- [0mdefinition [1m[35mCreate table stmt columns[0m rowid [32m'true'[0m[34m
+      `- [0mcolumns [1m[35mColumn definition list[0m size [32m'17'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_DATEKEY'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_DATE'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'18.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_DAYOFWEEK'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'8.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_MONTH'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'9.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_YEAR'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1998.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1992.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_YEARMONTHNUM'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'300012.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'111111.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_YEARMONTH'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'7.000000'[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_DAYNUMINWEEK'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'7.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_DAYNUMINMONTH'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'31.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_DAYNUMINYEAR'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'366.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_MONTHNUMINYEAR'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'12.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_WEEKNUMINYEAR'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'INT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'53.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'1.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_SELLINGSEASON'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'TEXT'[0m upper_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'12.000000'[0m lower_bound [1m[35mFloating point literal[0m[34m
+        |   `- [0mliteral [32m'0.000000'[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_LASTDAYINWEEKFL'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'BOOLEAN'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_LASTDAYINMONTHFL'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'BOOLEAN'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        |- [0mitem [1m[35mColumn definition[0m[34m
+        | |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_HOLIDAYFL'[0m[34m
+        | `- [0mtype [1m[35mType name[0m type [32m'BOOLEAN'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m[34m
+        `- [0mitem [1m[35mColumn definition[0m[34m
+          |- [0midentifier [1m[35mIdentifier[0m quotation [33mnone[0m identifier [32m'D_WEEKDAYFL'[0m[34m
+          `- [0mtype [1m[35mType name[0m type [32m'BOOLEAN'[0m upper_bound [35mundefined[0m lower_bound [35mundefined[0m
+
