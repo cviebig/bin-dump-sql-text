@@ -23,5 +23,5 @@ target_link_libraries(dump-sql-text
                       dump dump_sql_dumper
                       ${Boost_LIBRARIES})
 
-set_property(TARGET dump-sql-text PROPERTY CXX_STANDARD 14)
+set_property(TARGET dump-sql-text PROPERTY CXX_STANDARD 17)
 set_property(TARGET dump-sql-text PROPERTY CXX_STANDARD_REQUIRED ON)
